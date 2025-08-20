@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskCero - Cosmos</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="cosmos"></canvas>
+
+  <div id="planet-info" style="
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 250px;
+    z-index: 1000;
+  ">
+    <h3 id="planet-name">Nombre</h3>
+    <label>Deadline:<br>
+      <input type="date" id="planet-deadline" style="width: 100%;" />
+    </label><br><br>
+    <label>Notas:<br>
+      <textarea id="planet-notes" style="width: 100%;" rows="3"></textarea>
+    </label><br><br>
+    <button onclick="closeInfo()">Cerrar</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
