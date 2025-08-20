@@ -1,0 +1,9 @@
+{
+  "name": "TaskCero Cosmos",
+  "short_name": "TaskCero",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": []
+}
